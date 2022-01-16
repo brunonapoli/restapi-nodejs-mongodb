@@ -9,7 +9,7 @@ app.set('port', process.env.PORT || 3000);
 
 //Middleware
 app.use(urlencoded({ extended: false}));
-app.use(json);
+app.use(json());
 
 //Routes
 app.use(IndexRoutes);
